@@ -1,0 +1,6 @@
+<%= form_for(@task) do |form| %>
+  <%= form.label :name %><br/>
+  <%= form.text_field :name, autocomplete: "name", class: "form-control" %>
+  <%= form.submit class: "btn btn-primary" %>
+<% end %>
+<%= link_to "home", root_path %>
